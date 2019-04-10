@@ -194,7 +194,7 @@
     <label>royal armchair</label>
     <description>A large, soft, luxurious seat. Fitted inside a golden frame for only the wealthiest elites. Can be used at tables, work stations, and elsewhere.</description>
     <graphicData>
-      <texPath>Things/Building/Furniture/Armchair</texPath>
+      <texPath>Things/Seating/RoyalArmchair/RoyalArmchair</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
       <drawSize>(3,3)</drawSize>

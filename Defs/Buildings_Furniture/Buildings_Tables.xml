@@ -7,7 +7,7 @@
     <graphicData>
       <texPath>Things/Tables/Table1x1</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(3,3)</drawSize>
+      <drawSize>(1,1)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
