@@ -1,0 +1,4 @@
+C:\Users\AaronDB\Desktop\Mods Folder for Mod Folders\Rimworld\Github\MoreFurniture\More-Furniture-A-O\Assemblies\AOMoreFurniture.dll
+C:\Users\AaronDB\Desktop\Mods Folder for Mod Folders\Rimworld\Github\MoreFurniture\More-Furniture-A-O\AOMoreFurniture\obj\Debug\AOMoreFurniture.csprojAssemblyReference.cache
+C:\Users\AaronDB\Desktop\Mods Folder for Mod Folders\Rimworld\Github\MoreFurniture\More-Furniture-A-O\AOMoreFurniture\obj\Debug\AOMoreFurniture.csproj.CoreCompileInputs.cache
+C:\Users\AaronDB\Desktop\Mods Folder for Mod Folders\Rimworld\Github\MoreFurniture\More-Furniture-A-O\AOMoreFurniture\obj\Debug\AOMoreFurniture.dll
