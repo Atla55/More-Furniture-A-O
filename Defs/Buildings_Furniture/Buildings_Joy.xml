@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Radio_Industrial</defName>
+    <label>industrial radio</label>
+    <description>An old device from a bygone era, it is able to pick up radio waves and play them back. Even on the rimworlds, there is often an old transmitter or lone radio station broadcasting something.</description>
+    <graphicData>
+      <texPath>Things/Joy/Radio_Industrial/Radio_Industrial</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.1, 1.1)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+        <offset>(0.0, 0.0, -0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.75,1.0,0.5)</rect>
+      </damageData>
+    </graphicData>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
+    <passability>PassThroughOnly</passability>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+		<shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>120</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+    </comps>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <WorkToBuild>10000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tradeTags>
+      <li>Television</li>
+    </tradeTags>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationCategory>Joy</designationCategory>
+    <researchPrerequisites><li>MF_ModernFurniture</li></researchPrerequisites>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    <fillPercent>0.2</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <pathCost>25</pathCost>
+    <rotatable>true</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <specialDisplayRadius>5</specialDisplayRadius>
+  </ThingDef>
+
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>Radio_Spacer</defName>
+    <label>longwave radio</label>
+    <description>A high tech radio reciever that is able to pick up very faint signals and play them back at crystal clear quality.</description>
+    <graphicData>
+      <texPath>Things/Joy/Radio_Modern/Radio_Modern</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>(1.2, 1.2)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+        <offset>(0.0, 0.0, -0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0,0.75,1.0,0.5)</rect>
+      </damageData>
+    </graphicData>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <costList>
+      <Steel>100</Steel>
+      <ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+    <passability>PassThroughOnly</passability>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+		<shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+      <li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+    </comps>
+    <altitudeLayer>Building</altitudeLayer>
+    <statBases>
+      <WorkToBuild>30000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>12</Mass>
+      <Flammability>1.0</Flammability>
+    </statBases>
+    <tradeTags>
+      <li>Television</li>
+    </tradeTags>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationCategory>Joy</designationCategory>
+    <researchPrerequisites><li>MF_ModernFurniture</li></researchPrerequisites>
+    <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
+    <fillPercent>0.2</fillPercent>
+    <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+    <pathCost>25</pathCost>
+    <rotatable>true</rotatable>
+    <canOverlapZones>false</canOverlapZones>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <specialDisplayRadius>8</specialDisplayRadius>
+  </ThingDef>
+  
+</Defs>

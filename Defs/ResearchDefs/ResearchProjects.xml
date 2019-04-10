@@ -1,0 +1,122 @@
+﻿<?Yml version="1.0" encoding="utf8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>MF_BasicFurniture</defName>
+		<label>basic furniture</label>
+		<tab>OA_MoreFurniture</tab>
+		<description>Build simple furniture like simple beds, basic tables, stools, benches and more.</description>
+		<baseCost>300</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<tags>
+		  <li>ClassicStart</li>
+		  <li>TribalStart</li>
+		</tags>
+		<researchViewY>2</researchViewY>
+		<researchViewX>0</researchViewX>
+	</ResearchProjectDef>
+
+	  <ResearchProjectDef>
+		<defName>ComplexFurniture</defName>
+		<label>complex furniture</label>
+		<tab>OA_MoreFurniture</tab>
+		<description>Build complex furniture like beds, end tables, dining chairs, armchairs, dressers, tool cabinets, billiard tables, and poker tables, vents, sarcophagi, and more.</description>
+		<baseCost>400</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1</researchViewY>
+		<prerequisites>
+		  <li>MF_BasicFurniture</li>
+		</prerequisites>
+		<tags>
+		  <li>ClassicStart</li>
+		</tags>
+	  </ResearchProjectDef>
+
+	  <ResearchProjectDef>
+		<defName>MF_RoyalFurniture</defName>
+		<label>royal furniture</label>
+		<tab>OA_MoreFurniture</tab>
+		<description>Build luxury furniture, usually only seen in the houses of the wealthy elite. Including poster beds, royal chairs, tables and armchairs.</description>
+		<baseCost>600</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1</researchViewY>
+		<prerequisites>
+		  <li>ComplexFurniture</li>
+		</prerequisites>
+	  </ResearchProjectDef>
+	 
+	  <ResearchProjectDef>
+		<defName>MF_ModernFurniture</defName>
+		<label>modern furniture</label>
+		<tab>OA_MoreFurniture</tab>
+		<description>Learn to build fast, cost effective furniture of the modern day such as</description>
+		<baseCost>500</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2</researchViewY>
+		<prerequisites>
+		  <li>ComplexFurniture</li>
+		</prerequisites>
+	  </ResearchProjectDef>
+	 
+	  <ResearchProjectDef>
+		<defName>MF_IndustryFurniture</defName>
+		<label>workshop furniture</label>
+		<tab>OA_MoreFurniture</tab>
+		<description>Build industry boosting pieces of furniture such as filing cabinets, tool lockers, worktops and more.</description>
+		<baseCost>600</baseCost>
+		<techLevel>Industrial</techLevel>
+		<researchViewX>3</researchViewX>
+		<researchViewY>2</researchViewY>
+		<prerequisites>
+		  <li>MF_ModernFurniture</li>
+		</prerequisites>
+	  </ResearchProjectDef>
+	 
+	  <ResearchProjectDef>
+		<defName>MF_SpacerFurniture</defName>
+		<label>spacer furniture</label>
+		<tab>OA_MoreFurniture</tab>
+		<description>Build the cutting edge in relaxation and comfort, usually only seen on glitterworlds. Including</description>
+		<baseCost>600</baseCost>
+		<techLevel>Spacer</techLevel>
+		<researchViewX>2</researchViewX>
+		<researchViewY>3</researchViewY>
+		<prerequisites>
+		  <li>MF_ModernFurniture</li>
+		</prerequisites>
+	  </ResearchProjectDef>
+	  
+	<ResearchProjectDef>
+		<defName>TubeTelevision</defName>
+		<label>basic electronics</label>
+		<tab>OA_MoreFurniture</tab>
+		<description>Build basic electronic joy sources such as tube televisions, industrial radios and more.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+			<li>Electricity</li>
+		</prerequisites>
+		<researchViewY>4</researchViewY>
+		<researchViewX>0</researchViewX>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>FlatscreenTelevision</defName>
+		<label>complex electronics</label>
+		<tab>OA_MoreFurniture</tab>
+		<description>Build complex electronic joy sources such as flatscreen televisions, longwave radios and more.</description>
+		<baseCost>2000</baseCost>
+		<techLevel>Industrial</techLevel>
+		<prerequisites>
+		  <li>TubeTelevision</li>
+		  <li>MicroelectronicsBasics</li>
+		</prerequisites>
+		<requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+		<researchViewY>4</researchViewY>
+		<researchViewX>1</researchViewX>
+	</ResearchProjectDef>
+
+</Defs>

@@ -33,7 +33,7 @@
     <label>royal table (2x4)</label>
 	<description>An impressive looking table for eating off of, this one being complete with a gold outer rim and rounded ends, suited for the wealthy.</description>
     <graphicData>
-      <texPath>Things/Tables/RoyalTable2x4</texPath>
+      <texPath>Things/Tables/RoyalTable2x4/RoyalTable2x4</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
       <drawSize>(4,6)</drawSize>
