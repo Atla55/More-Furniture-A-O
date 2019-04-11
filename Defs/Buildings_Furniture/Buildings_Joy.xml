@@ -50,7 +50,7 @@
     </tradeTags>
     <constructEffect>ConstructMetal</constructEffect>
     <designationCategory>Joy</designationCategory>
-    <researchPrerequisites><li>MF_ModernFurniture</li></researchPrerequisites>
+    <researchPrerequisites><li>TubeTelevision</li></researchPrerequisites>
     <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
     <fillPercent>0.2</fillPercent>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
@@ -98,6 +98,9 @@
 			<li Class="CompProperties_RoomIdentifier">
 				<roomStat>Impressiveness</roomStat>
 			</li>
+	  <li>
+        <compClass>CompGatherSpot</compClass>
+      </li>
     </comps>
     <altitudeLayer>Building</altitudeLayer>
     <statBases>
@@ -111,7 +114,7 @@
     </tradeTags>
     <constructEffect>ConstructMetal</constructEffect>
     <designationCategory>Joy</designationCategory>
-    <researchPrerequisites><li>MF_ModernFurniture</li></researchPrerequisites>
+    <researchPrerequisites><li>FlatscreenTelevision</li></researchPrerequisites>
     <constructionSkillPrerequisite>10</constructionSkillPrerequisite>
     <fillPercent>0.2</fillPercent>
     <leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
