@@ -15,7 +15,7 @@ namespace AOMoreFurniture
         {
             Random rnd = new Random();
 
-            if (this.pawn.IsHashIntervalTick(800 + rnd.Next(0,200)))
+            if (this.pawn.IsHashIntervalTick(400 + rnd.Next(0,100)))
             {
                 switch (rnd.Next(0,3))
                 {

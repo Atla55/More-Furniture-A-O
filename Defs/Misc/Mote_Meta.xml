@@ -14,4 +14,16 @@
     </graphicData>
   </ThingDef>
 
+    <ThingDef ParentName="MoteBase">
+    <defName>Mote_FlyingDart</defName>
+    <graphicData>
+      <texPath>Things/Mote/PlayingDart</texPath>
+    </graphicData>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <mote>
+      <solidTime>10</solidTime>
+      <fadeOutTime>4</fadeOutTime>
+      <landSound>Standard_Drop</landSound>
+    </mote>
+  </ThingDef>
 </Defs>

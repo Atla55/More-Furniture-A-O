@@ -51,7 +51,7 @@
 		<defName>MF_ModernFurniture</defName>
 		<label>modern furniture</label>
 		<tab>OA_MoreFurniture</tab>
-		<description>Learn to build fast, cost effective furniture of the modern day such as roulette tables,</description>
+		<description>Learn to build fast, cost effective furniture of the modern day such as roulette tables, dart boards and</description>
 		<baseCost>500</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>2</researchViewX>

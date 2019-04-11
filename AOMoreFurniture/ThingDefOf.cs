@@ -19,6 +19,8 @@ namespace AOMoreFurniture
         public static ThingDef Radio_Industrial;
 
         public static ThingDef Radio_Spacer;
+
+        public static ThingDef Mote_FlyingDart;
     }
 
 }

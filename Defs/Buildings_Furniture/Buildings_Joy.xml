@@ -140,8 +140,9 @@
       <damageData>
         <rect>(0.3,0.3,0.4,0.4)</rect>
       </damageData>
-	  <drawSize>(1.85,2.5)</drawSize>
+	  <drawSize>(2,3)</drawSize>
     </graphicData>
+	<uiIconScale>0.8</uiIconScale>
     <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
 	<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
@@ -179,6 +180,9 @@
     </costList>
     <pathCost>10</pathCost>
     <designationCategory>Joy</designationCategory>
+    <hasInteractionCell>True</hasInteractionCell>
+	<interactionCellIcon>DiningChair</interactionCellIcon>
+    <interactionCellOffset>(0,0,1)</interactionCellOffset>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -203,7 +207,7 @@
       <texPath>Things/Joy/Roulette_Table/RouletteTable</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
-      <drawSize>(3.9,3.8)</drawSize>
+      <drawSize>(4,3.05)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -251,5 +255,70 @@
 			</li>
 		</comps>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>
+  
+  <ThingDef ParentName="BuildingBase">
+    <defName>Joy_DartsBoard</defName>
+    <label>darts board</label>
+    <description>A popular game among rimworlds involving throwing darts at a circular target, It's relaxing, and trains shooting skills at a higher rate than horseshoes or hoopstone.</description>
+    <graphicData>
+      <texPath>Things/Joy/DartBoard/DartBoard</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <drawSize>(1,1.5)</drawSize>
+      <shadowData>
+        <volume>(0.08, 0.2, 0.08)</volume>
+        <offset>(0, 0, -0.1)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.3,0.3,0.4,0.4)</rect>
+      </damageData>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+	
+    <rotatable>false</rotatable>
+	
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>75</MaxHitPoints>
+      <WorkToBuild>100</WorkToBuild>
+      <Mass>3</Mass>
+      <Flammability>1.0</Flammability>
+      <JoyGainFactor>1.1</JoyGainFactor>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <costList>
+      <Cloth>40</Cloth>
+    </costList>
+    <building>
+      <joyKind>Gaming_Dexterity</joyKind>
+      <watchBuildingStandDistanceRange>
+        <min>5</min>
+        <max>5</max>
+      </watchBuildingStandDistanceRange>
+			<watchBuildingStandRectWidth>3</watchBuildingStandRectWidth>
+    </building>
+    <costStuffCount>15</costStuffCount>
+    <pathCost>10</pathCost>
+		<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+		<placeWorkers>
+			<li>PlaceWorker_WatchArea</li>
+		</placeWorkers> 
+    <designationCategory>Joy</designationCategory>
+    <researchPrerequisites>
+      <li>MF_ModernFurniture</li>
+    </researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+		</comps>
   </ThingDef>
 </Defs>
