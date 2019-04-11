@@ -79,7 +79,7 @@
 		<defName>MF_SpacerFurniture</defName>
 		<label>spacer furniture</label>
 		<tab>OA_MoreFurniture</tab>
-		<description>Build the cutting edge in relaxation and comfort, usually only seen on glitterworlds. Including</description>
+		<description>Build the cutting edge in relaxation and comfort, usually only seen on glitterworlds. Including ergononic beds</description>
 		<baseCost>600</baseCost>
 		<techLevel>Spacer</techLevel>
 		<researchViewX>2</researchViewX>

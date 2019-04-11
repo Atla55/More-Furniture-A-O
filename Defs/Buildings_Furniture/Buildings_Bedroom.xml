@@ -44,14 +44,14 @@
       <bed_showSleeperBody>True</bed_showSleeperBody>
       <bed_healPerDay>3</bed_healPerDay>
     </building>
-    <fillPercent>0.4</fillPercent>
+    <fillPercent>0.3</fillPercent>
     <pathCost>60</pathCost>
     <staticSunShadowHeight>0.17</staticSunShadowHeight>
     <castEdgeShadows>True</castEdgeShadows>
     <designationHotKey>Misc2</designationHotKey>
     <techLevel>Medieval</techLevel>
     <researchPrerequisites>
-      <!--<li>ComplexFurniture</li>-->
+      <li>MF_BasicFurniture</li>
     </researchPrerequisites>
     <uiIconScale>0.90</uiIconScale>
   </ThingDef>
@@ -102,10 +102,7 @@
     <staticSunShadowHeight>0.17</staticSunShadowHeight>
     <castEdgeShadows>True</castEdgeShadows>
     <designationHotKey>Misc2</designationHotKey>
-    <techLevel>Medieval</techLevel>
-    <researchPrerequisites>
-      <!--<li>ComplexFurniture</li>-->
-    </researchPrerequisites>
+    <techLevel>Neolithic</techLevel>
     <uiIconScale>0.90</uiIconScale>
   </ThingDef>
 
@@ -156,7 +153,7 @@
       <bed_healPerDay>4</bed_healPerDay>
     </building>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
-    <fillPercent>0.4</fillPercent>
+    <fillPercent>0.6</fillPercent>
     <pathCost>60</pathCost>
     <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
     <staticSunShadowHeight>0.17</staticSunShadowHeight>
@@ -164,12 +161,129 @@
     <designationHotKey>Misc3</designationHotKey>
     <techLevel>Medieval</techLevel>
     <researchPrerequisites>
-      <!--<li>ComplexFurniture</li>-->
+      <li>MF_RoyalFurniture</li>
     </researchPrerequisites>
 	<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <uiIconScale>0.90</uiIconScale>
   </ThingDef>
 
- 
+  <ThingDef ParentName="ArtableBedBase">
+    <defName>Bed_Ergonomic</defName>
+    <label>ergonomic bed</label>
+    <description>An ergonomically designed bed to help support the spine, distribute body weight and overall enchance sleep quality.</description>
+    <graphicData>
+      <texPath>Things/Bedroom/ErgonomicBed/SpacerBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0,0.05,2,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>180</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToBuild>15000</WorkToBuild>
+      <Mass>75</Mass>
+      <Beauty>2</Beauty>
+      <BedRestEffectiveness>1.15</BedRestEffectiveness>
+      <Comfort>0.9</Comfort>
+      <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(1,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+        <costStuffCount>60</costStuffCount>
+    <costList>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <building>
+      <bed_showSleeperBody>False</bed_showSleeperBody>
+      <bed_healPerDay>5</bed_healPerDay>
+    </building>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>60</pathCost>
+    <leaveResourcesWhenKilled>False</leaveResourcesWhenKilled>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <designationHotKey>Misc3</designationHotKey>
+    <techLevel>Spacer</techLevel>
+    <researchPrerequisites>
+      <li>MF_SpacerFurniture</li>
+    </researchPrerequisites>
+	<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
 
+  <ThingDef ParentName="ArtableBedBase">
+    <defName>Bed_DoubleErgonomic</defName>
+    <label>ergonomic double bed</label>
+    <description>An ergonomically designed double-wide bed to help support the spine, distribute body weight and overall enchance sleep quality. Fits two.</description>
+    <graphicData>
+      <texPath>Things/Bedroom/DoubleErgonomicBed/SpacerDoubleBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(4.05,4.05)</drawSize>
+      <damageData>
+        <rect>(0,0.05,2,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>220</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <WorkToBuild>30000</WorkToBuild>
+      <Mass>95</Mass>
+      <Beauty>4</Beauty>
+      <BedRestEffectiveness>1.18</BedRestEffectiveness>
+      <Comfort>1</Comfort>
+      <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(2,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+        <costStuffCount>110</costStuffCount>
+    <costList>
+      <ComponentIndustrial>10</ComponentIndustrial>
+    </costList>
+    <building>
+      <bed_showSleeperBody>False</bed_showSleeperBody>
+      <bed_healPerDay>5</bed_healPerDay>
+    </building>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <fillPercent>0.4</fillPercent>
+    <pathCost>60</pathCost>
+    <leaveResourcesWhenKilled>False</leaveResourcesWhenKilled>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <designationHotKey>Misc3</designationHotKey>
+    <techLevel>Spacer</techLevel>
+    <researchPrerequisites>
+      <li>MF_SpacerFurniture</li>
+    </researchPrerequisites>
+	<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
 </Defs>
