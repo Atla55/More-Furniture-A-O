@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <JobDef>
+    <defName>Play_Roulette</defName>
+    <driverClass>AOMoreFurniture.JobDriver_PlayRoulette</driverClass>
+    <reportString>playing roulette.</reportString>
+    <joyDuration>4000</joyDuration>
+    <joyMaxParticipants>3</joyMaxParticipants>
+    <joySkill>Social</joySkill>
+    <joyXpPerTick>0.004</joyXpPerTick>
+    <joyKind>Social</joyKind>
+    <taleOnCompletion>PlayedGame</taleOnCompletion>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+    <JoyGiverDef>
+    <defName>Play_Roulette</defName>
+    <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+    <baseChance>4</baseChance>
+	<requireChair>false</requireChair>
+    <thingDefs>
+      <li>Joy_RouletteTable</li>
+    </thingDefs>
+    <jobDef>Play_Roulette</jobDef>
+    <joyKind>Social</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+ 
+  <JobDef>
+    <defName>Play_Arcade</defName>
+    <driverClass>AOMoreFurniture.JobDriver_PlayArcadeSounds</driverClass>
+    <reportString>playing arcade game.</reportString>
+    <joyDuration>4000</joyDuration>
+    <joyMaxParticipants>1</joyMaxParticipants>
+    <joySkill>Social</joySkill>
+    <joyXpPerTick>0.004</joyXpPerTick>
+    <joyKind>Gaming_Electronic</joyKind>
+    <taleOnCompletion>PlayedGame</taleOnCompletion>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+    <JoyGiverDef>
+    <defName>Play_Arcade</defName>
+    <giverClass>JoyGiver_WatchBuilding</giverClass>
+    <baseChance>2</baseChance>
+	<requireChair>false</requireChair>
+    <thingDefs>
+      <li>Joy_Arcade</li>
+    </thingDefs>
+    <jobDef>Play_Arcade</jobDef>
+    <joyKind>Gaming_Electronic</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+  
+</Defs>

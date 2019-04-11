@@ -125,4 +125,131 @@
     <specialDisplayRadius>8</specialDisplayRadius>
   </ThingDef>
   
+  <ThingDef ParentName="BuildingBase">
+    <defName>Joy_Arcade</defName>
+    <label>arcade machine</label>
+    <description>A tall cabinet that holds a small cathode ray display and control panel for playing a variety of pre-installed games.</description>
+    <graphicData>
+      <texPath>Things/Joy/Arcade/Arcade</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <shadowData>
+        <volume>(0.08, 0.2, 0.08)</volume>
+        <offset>(0, 0, -0.47)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.3,0.3,0.4,0.4)</rect>
+      </damageData>
+	  <drawSize>(1.85,2.5)</drawSize>
+    </graphicData>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <altitudeLayer>Building</altitudeLayer>
+	<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <rotatable>true</rotatable>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToBuild>10000</WorkToBuild>
+      <Mass>8</Mass>
+      <Flammability>1.0</Flammability>
+      <JoyGainFactor>1.3</JoyGainFactor>
+    </statBases>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+    </stuffCategories>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <researchPrerequisites><li>TubeTelevision</li></researchPrerequisites>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+    <building>
+      <joyKind>Gaming_Electronic</joyKind>
+      <watchBuildingStandDistanceRange>
+        <min>1</min>
+        <max>1</max>
+      </watchBuildingStandDistanceRange>
+      <watchBuildingStandRectWidth>1</watchBuildingStandRectWidth>
+    </building>
+    <costStuffCount>30</costStuffCount>
+    <costList>
+      <Steel>60</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <pathCost>10</pathCost>
+    <designationCategory>Joy</designationCategory>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>120</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_RoomIdentifier">
+        <roomStat>Impressiveness</roomStat>
+      </li>
+    </comps>
+    <tradeTags>
+      <li>Television</li>
+    </tradeTags>
+  </ThingDef>
+ 
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>Joy_RouletteTable</defName>
+    <label>roulette table</label>
+    <description>A soft-topped bounded table with a wheel for playing roulette, a good way to train your social skills and luck.</description>
+    <graphicData>
+      <texPath>Things/Joy/Roulette_Table/RouletteTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3.9,3.8)</drawSize>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <staticSunShadowHeight>0.2</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <altitudeLayer>Building</altitudeLayer>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.40</fillPercent>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <building>
+      <joyKind>Social</joyKind>
+    </building>
+    <statBases>
+      <MaxHitPoints>250</MaxHitPoints>
+      <WorkToBuild>12000</WorkToBuild>
+      <Mass>300</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>1</Beauty>
+      <JoyGainFactor>1.3</JoyGainFactor>
+    </statBases>
+    <size>(2,3)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>160</costStuffCount>
+    <costList>
+      <Cloth>40</Cloth>
+    </costList>
+    <pathCost>70</pathCost>
+    <passability>PassThroughOnly</passability>
+    <designationCategory>Joy</designationCategory>
+    <canOverlapZones>false</canOverlapZones>
+    <researchPrerequisites>
+      <li>MF_ModernFurniture</li>
+    </researchPrerequisites>
+		<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+		</comps>
+    <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+  </ThingDef>
 </Defs>

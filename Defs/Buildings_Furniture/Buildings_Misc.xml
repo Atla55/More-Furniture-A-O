@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="LampBase">
+    <defName>Light_Streetlamp</defName>
+    <label>outdoor lamp</label>
+    <description>A tall electrical lamp that lights an area, able to be placed outside without catching fire, making it ideal for road lighting.</description>
+	<fillPercent>0.30</fillPercent>
+    <graphicData>
+      <texPath>Things/Other/LampOutdoor</texPath>
+	  <drawSize>(1.1,2.5)</drawSize>
+    </graphicData>
+    <costList>
+      <Steel>40</Steel>
+    </costList>
+    <statBases>
+      <Mass>20</Mass>
+    </statBases>
+	<size>(1,1)</size>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+		<shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>30</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>18</glowRadius>
+        <glowColor>(217,217,208,0)</glowColor>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+  </ThingDef>
+
+
+
+</Defs>

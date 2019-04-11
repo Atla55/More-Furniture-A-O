@@ -197,7 +197,7 @@
       <texPath>Things/Seating/RoyalArmchair/RoyalArmchair</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
-      <drawSize>(3,3)</drawSize>
+      <drawSize>(2.9,2.9)</drawSize>
       <damageData>
         <rectN>(0,0,1,0.703125)</rectN>
         <rectS>(0.09375,0,0.84375,1)</rectS>

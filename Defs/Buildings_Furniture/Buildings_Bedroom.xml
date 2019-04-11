@@ -235,7 +235,7 @@
       <texPath>Things/Bedroom/DoubleErgonomicBed/SpacerDoubleBed</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
       <shaderType>CutoutComplex</shaderType>
-      <drawSize>(4.05,4.05)</drawSize>
+      <drawSize>(2.05,2.05)</drawSize>
       <damageData>
         <rect>(0,0.05,2,1.95)</rect>
       </damageData>

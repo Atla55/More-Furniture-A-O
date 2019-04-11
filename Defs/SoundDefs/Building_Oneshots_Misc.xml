@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Defs>
+  
+  <SoundDef>
+    <defName>Arcade_SFXOne</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Arcade/SFX1</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>4.46512</min>        
+          <max>8.4651</max>
+        </volumeRange>     
+        <distRange>
+          <min>20</min>
+          <max>30</max>
+        </distRange>		
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Arcade_SFXTwo</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Arcade/SFX2</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>4.46512</min>        
+          <max>8.4651</max>
+        </volumeRange>   
+        <distRange>
+          <min>20</min>
+          <max>30</max>
+        </distRange>		
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+ 
+  <SoundDef>
+    <defName>Arcade_SFXThree</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Arcade/SFX3</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>4.46512</min>        
+          <max>8.4651</max>
+        </volumeRange>  
+        <distRange>
+          <min>20</min>
+          <max>30</max>
+        </distRange>		
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+ 
+  <SoundDef>
+    <defName>Arcade_SFXFour</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>2</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Arcade/SFX4</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>4.46512</min>        
+          <max>8.4651</max>
+        </volumeRange>
+        <distRange>
+          <min>20</min>
+          <max>30</max>
+        </distRange>		
+        <pitchRange>
+          <min>0.85</min>        
+          <max>1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+</Defs>

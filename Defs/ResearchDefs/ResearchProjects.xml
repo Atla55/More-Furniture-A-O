@@ -51,7 +51,7 @@
 		<defName>MF_ModernFurniture</defName>
 		<label>modern furniture</label>
 		<tab>OA_MoreFurniture</tab>
-		<description>Learn to build fast, cost effective furniture of the modern day such as</description>
+		<description>Learn to build fast, cost effective furniture of the modern day such as roulette tables,</description>
 		<baseCost>500</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>2</researchViewX>
@@ -93,7 +93,7 @@
 		<defName>TubeTelevision</defName>
 		<label>basic electronics</label>
 		<tab>OA_MoreFurniture</tab>
-		<description>Build basic electronic joy sources such as tube televisions, industrial radios and more.</description>
+		<description>Build basic electronic joy sources such as tube televisions, industrial radios, arcades and more.</description>
 		<baseCost>1000</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>

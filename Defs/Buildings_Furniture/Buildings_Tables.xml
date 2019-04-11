@@ -23,10 +23,48 @@
       <Flammability>1.0</Flammability>
       <Beauty>0.5</Beauty>
     </statBases>
+	<rotatable>false</rotatable>
     <size>(1,1)</size>
     <costStuffCount>20</costStuffCount>
   </ThingDef>
 
+  <ThingDef ParentName="TableGatherSpotBase">
+    <defName>Table_Counter</defName>
+    <label>countertop</label>
+	<description>A smooth, waist high surface for eating off of, commonly found in kitchens and bars.</description>
+    <graphicData>
+      <texPath>Things/Tables/Counter/Counter_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>CornerFiller</linkType>
+	  <shaderType>CutoutComplex</shaderType>
+      <linkFlags>
+        <li>Wall</li>
+        <li>Rock</li>
+      </linkFlags>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
+      </damageData>
+    </graphicData>
+	<uiIconPath>Things/Tables/Counter/Counter_MenuIcon</uiIconPath>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <WorkToBuild>500</WorkToBuild>
+      <Mass>3</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>0.5</Beauty>
+    </statBases>
+	<placingDraggableDimensions>1</placingDraggableDimensions>
+	<rotatable>false</rotatable>
+    <size>(1,1)</size>
+    <costStuffCount>15</costStuffCount>
+  </ThingDef>
 
   <ThingDef Name="RoyalTableDesc" ParentName="TableGatherSpotBase" Abstract="True">
 	<description>An impressive looking table for eating off of, this one being complete with a gold outer rim and rounded ends, suited for the wealthy.</description>
@@ -62,6 +100,7 @@
       <Gold>10</Gold>
     </costList>
 	<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+	<rotatable>false</rotatable>
   </ThingDef>
 
   <ThingDef ParentName="RoyalTableDesc">
@@ -84,6 +123,7 @@
       <Gold>40</Gold>
     </costList>
 	<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+	<rotatable>false</rotatable>
   </ThingDef>
  
   <ThingDef ParentName="RoyalTableDesc">
@@ -112,7 +152,7 @@
     <defName>Table_Royal3x3c</defName>
     <label>royal table (3x3)</label>
     <graphicData>
-      <texPath>Things/Tables/RoyalTable3x2/RoyalTable3x3</texPath>
+      <texPath>Things/Tables/RoyalTable3x3/RoyalTable3x3</texPath>
       <drawSize>(5,5)</drawSize>
     </graphicData>
     <statBases>
@@ -128,6 +168,7 @@
       <Gold>60</Gold>
     </costList>
 	<constructionSkillPrerequisite>8</constructionSkillPrerequisite>
+	<rotatable>false</rotatable>
   </ThingDef>
  
   <ThingDef ParentName="RoyalTableDesc">
@@ -135,7 +176,7 @@
     <label>royal table (2x4)</label>
     <graphicData>
       <texPath>Things/Tables/RoyalTable2x4/RoyalTable2x4</texPath>
-      <drawSize>(4,6)</drawSize>
+      <drawSize>(3.9,6)</drawSize>
     </graphicData>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
