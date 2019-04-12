@@ -8,7 +8,7 @@
     <joyDuration>4000</joyDuration>
     <joyMaxParticipants>3</joyMaxParticipants>
     <joySkill>Social</joySkill>
-    <joyXpPerTick>0.004</joyXpPerTick>
+    <joyXpPerTick>0.02</joyXpPerTick>
     <joyKind>Social</joyKind>
     <taleOnCompletion>PlayedGame</taleOnCompletion>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
@@ -66,7 +66,7 @@
     <joyDuration>4000</joyDuration>
     <joyMaxParticipants>2</joyMaxParticipants>
     <joySkill>Shooting</joySkill>
-    <joyXpPerTick>0.012</joyXpPerTick>
+    <joyXpPerTick>0.04</joyXpPerTick>
     <joyKind>Gaming_Dexterity</joyKind>
     <taleOnCompletion>PlayedGame</taleOnCompletion>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
@@ -88,4 +88,32 @@
     </requiredCapacities>
   </JoyGiverDef>
   
+  <JobDef>
+    <defName>Play_PunchingBag</defName>
+    <driverClass>AOMoreFurniture.JobDriver_PlayPunchingBag</driverClass>
+    <reportString>using punching bag.</reportString>
+    <joyDuration>4000</joyDuration>
+    <joyMaxParticipants>1</joyMaxParticipants>
+    <joySkill>Melee</joySkill>
+    <joyXpPerTick>0.04</joyXpPerTick>
+    <joyKind>Meditative</joyKind>
+    <taleOnCompletion>Tale_UsedPunchingBag</taleOnCompletion>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+    <JoyGiverDef>
+    <defName>Play_PunchingBag</defName>
+    <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
+    <baseChance>1</baseChance>
+	<requireChair>false</requireChair>
+    <thingDefs>
+      <li>Joy_PunchingBag</li>
+    </thingDefs>
+    <jobDef>Play_PunchingBag</jobDef>
+    <joyKind>Meditative</joyKind>
+    <requiredCapacities>
+      <li>Sight</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
 </Defs>

@@ -1,61 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
-  <ThingDef ParentName="BedWithQualityBase">
-    <defName>Bed_Simple</defName>
-    <label>simple bed</label>
-    <description>A somewhat comfy net and pillow rested on a sturdy frame.</description>
-    <graphicData>
-      <texPath>Things/Bedroom/SimpleBed/SimpleBed</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-      <drawSize>(2,2)</drawSize>
-      <damageData>
-        <rect>(0,0.05,1,1.95)</rect>
-      </damageData>
-    </graphicData>
-    <comps>
-      <li Class="CompProperties_AffectedByFacilities">
-        <linkableFacilities>
-          <li>EndTable</li>
-          <li>Dresser</li>
-        </linkableFacilities>
-      </li>
-    </comps>
-    <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <Flammability>1.0</Flammability>
-      <Beauty>0.5</Beauty>
-      <WorkToBuild>600</WorkToBuild>
-      <Mass>30</Mass>
-      <BedRestEffectiveness>0.970</BedRestEffectiveness>
-      <Comfort>0.7</Comfort>
-      <ImmunityGainSpeedFactor>1.03</ImmunityGainSpeedFactor>
-			<SurgerySuccessChanceFactor>0.98</SurgerySuccessChanceFactor>
-    </statBases>
-    <size>(1,2)</size>
-    <stuffCategories>
-      <li>Metallic</li>
-      <li>Woody</li>
-      <li>Stony</li>
-    </stuffCategories>
-    <costStuffCount>40</costStuffCount>
-    <building>
-      <bed_showSleeperBody>True</bed_showSleeperBody>
-      <bed_healPerDay>3</bed_healPerDay>
-    </building>
-    <fillPercent>0.3</fillPercent>
-    <pathCost>60</pathCost>
-    <staticSunShadowHeight>0.17</staticSunShadowHeight>
-    <castEdgeShadows>True</castEdgeShadows>
-    <designationHotKey>Misc2</designationHotKey>
-    <techLevel>Medieval</techLevel>
-    <researchPrerequisites>
-      <li>MF_BasicFurniture</li>
-    </researchPrerequisites>
-    <uiIconScale>0.90</uiIconScale>
-  </ThingDef>
-  
   <ThingDef ParentName="BedWithQualityBase">
     <defName>Bed_StoneSlab</defName>
     <label>slab bed</label>
@@ -105,6 +49,64 @@
     <techLevel>Neolithic</techLevel>
     <uiIconScale>0.90</uiIconScale>
   </ThingDef>
+  
+  <ThingDef ParentName="BedWithQualityBase">
+    <defName>Bed_Simple</defName>
+    <label>simple bed</label>
+    <description>A somewhat comfy net and pillow rested on a sturdy frame.</description>
+    <graphicData>
+      <texPath>Things/Bedroom/SimpleBed/SimpleBed</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(2,2)</drawSize>
+      <damageData>
+        <rect>(0,0.05,1,1.95)</rect>
+      </damageData>
+    </graphicData>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>EndTable</li>
+          <li>Dresser</li>
+		  <li>Table_RoyalDresser</li>
+		  <li>Table_RoyalEndTable</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>0.5</Beauty>
+      <WorkToBuild>600</WorkToBuild>
+      <Mass>30</Mass>
+      <BedRestEffectiveness>0.970</BedRestEffectiveness>
+      <Comfort>0.7</Comfort>
+      <ImmunityGainSpeedFactor>1.03</ImmunityGainSpeedFactor>
+			<SurgerySuccessChanceFactor>0.98</SurgerySuccessChanceFactor>
+    </statBases>
+    <size>(1,2)</size>
+    <stuffCategories>
+      <li>Metallic</li>
+      <li>Woody</li>
+      <li>Stony</li>
+    </stuffCategories>
+    <costStuffCount>40</costStuffCount>
+    <building>
+      <bed_showSleeperBody>True</bed_showSleeperBody>
+      <bed_healPerDay>3</bed_healPerDay>
+    </building>
+    <fillPercent>0.3</fillPercent>
+    <pathCost>60</pathCost>
+    <staticSunShadowHeight>0.17</staticSunShadowHeight>
+    <castEdgeShadows>True</castEdgeShadows>
+    <designationHotKey>Misc2</designationHotKey>
+    <techLevel>Medieval</techLevel>
+    <researchPrerequisites>
+      <li>MF_BasicFurniture</li>
+    </researchPrerequisites>
+    <uiIconScale>0.90</uiIconScale>
+  </ThingDef>
+ 
 
   <ThingDef ParentName="ArtableBedBase">
     <defName>Bed_Kingsize</defName>
@@ -124,6 +126,8 @@
         <linkableFacilities>
           <li>EndTable</li>
           <li>Dresser</li>
+		  <li>Table_RoyalDresser</li>
+		  <li>Table_RoyalEndTable</li>
         </linkableFacilities>
       </li>
     </comps>
@@ -167,6 +171,100 @@
     <uiIconScale>0.90</uiIconScale>
   </ThingDef>
 
+  <ThingDef ParentName="TableBase">
+    <defName>Table_RoyalEndTable</defName>
+    <label>royal end table</label>
+    <description>A small bedside table that has been adorned with luxury gold fittings, making nearby beds more comfortable. Must be placed directly adjacent to the head of the bed. Placing more than one end table near the same bed has no effect.</description>
+    <surfaceType>Item</surfaceType>
+    <graphicData>
+      <texPath>Things/Bedroom/RoyalEndTable/RoyalEndTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <drawSize>(1,1)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>85</MaxHitPoints>
+      <WorkToBuild>12000</WorkToBuild>
+      <Mass>8</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>30</Beauty>
+    </statBases>
+    <pathCost>60</pathCost>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <costStuffCount>50</costStuffCount>
+    <costList>
+      <Gold>30</Gold>
+    </costList>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>MF_RoyalFurniture</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <Comfort>0.1</Comfort>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <mustBePlacedAdjacentCardinalToBedHead>true</mustBePlacedAdjacentCardinalToBedHead>
+      </li>
+    </comps>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <castEdgeShadows>false</castEdgeShadows>
+	<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+  </ThingDef>
+  
+  <ThingDef ParentName="TableBase">
+    <defName>Table_RoyalDresser</defName>
+    <label>royal dresser</label>
+    <description>A luxurious dresser, adorned with solid gold and elegant in design, making nearby beds more comfortable.Placing more than one end table near the same bed has no effect.</description>
+    <surfaceType>Item</surfaceType>
+    <graphicData>
+      <texPath>Things/Bedroom/RoyalDresser/RoyalDresser</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <drawSize>(1,1)</drawSize>
+      <shadowData>
+        <volume>(0.3, 0.6, 0.3)</volume>
+      </shadowData>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>125</MaxHitPoints>
+      <WorkToBuild>18000</WorkToBuild>
+      <Mass>20</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>50</Beauty>
+    </statBases>
+    <pathCost>60</pathCost>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <costStuffCount>70</costStuffCount>
+    <costList>
+      <Gold>50</Gold>
+    </costList>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>MF_RoyalFurniture</li>
+    </researchPrerequisites>
+    <comps>
+      <li Class="CompProperties_Facility">
+        <statOffsets>
+          <Comfort>0.1</Comfort>
+        </statOffsets>
+        <maxSimultaneous>1</maxSimultaneous>
+        <maxDistance>6</maxDistance>
+      </li>
+    </comps>
+    <staticSunShadowHeight>0</staticSunShadowHeight>
+    <castEdgeShadows>false</castEdgeShadows>
+	<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+  </ThingDef>
+  
   <ThingDef ParentName="ArtableBedBase">
     <defName>Bed_Ergonomic</defName>
     <label>ergonomic bed</label>
@@ -185,6 +283,8 @@
         <linkableFacilities>
           <li>EndTable</li>
           <li>Dresser</li>
+		  <li>Table_RoyalDresser</li>
+		  <li>Table_RoyalEndTable</li>
         </linkableFacilities>
       </li>
     </comps>
@@ -221,7 +321,7 @@
     <designationHotKey>Misc3</designationHotKey>
     <techLevel>Spacer</techLevel>
     <researchPrerequisites>
-      <li>MF_SpacerFurniture</li>
+      <li>MF_ModernFurniture</li>
     </researchPrerequisites>
 	<constructionSkillPrerequisite>4</constructionSkillPrerequisite>
     <uiIconScale>0.90</uiIconScale>
@@ -245,6 +345,8 @@
         <linkableFacilities>
           <li>EndTable</li>
           <li>Dresser</li>
+		  <li>Table_RoyalDresser</li>
+		  <li>Table_RoyalEndTable</li>
         </linkableFacilities>
       </li>
     </comps>
@@ -281,7 +383,7 @@
     <designationHotKey>Misc3</designationHotKey>
     <techLevel>Spacer</techLevel>
     <researchPrerequisites>
-      <li>MF_SpacerFurniture</li>
+      <li>MF_ModernFurniture</li>
     </researchPrerequisites>
 	<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <uiIconScale>0.90</uiIconScale>

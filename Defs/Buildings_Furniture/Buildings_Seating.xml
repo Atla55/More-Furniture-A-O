@@ -50,22 +50,24 @@
     <label>bench</label>
     <description>A simple long platform on which multiple people may sit at the same time, not very comfortable but much better than nothing. Can be used at tables, work stations, and elsewhere.</description>
     <graphicData>
-      <texPath>Things/Building/Furniture/Stool</texPath>
-      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Things/Seating/Bench/Bench_Atlas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <linkType>Basic</linkType>
+      <linkFlags>
+        <li>Custom7</li>
+      </linkFlags>
       <damageData>
-        <rectN>(0.125,0.296875,0.734375,0.421875)</rectN>
-        <rectS>(0.125,0.296875,0.734375,0.421875)</rectS>
-        <rectE>(0.234375,0.296875,0.5,0.546875)</rectE>
-        <rectW>(0.234375,0.296875,0.5,0.546875)</rectW>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
         <cornerBL>Damage/Corner</cornerBL>
         <cornerBR>Damage/Corner</cornerBR>
+        <edgeTop>Damage/Edge</edgeTop>
+        <edgeBot>Damage/Edge</edgeBot>
+        <edgeLeft>Damage/Edge</edgeLeft>
+        <edgeRight>Damage/Edge</edgeRight>
       </damageData>
-      <shadowData>
-        <volume>(0.18, 0.23, 0.18)</volume>
-      </shadowData>
     </graphicData>
+	<uiIconPath>Things/Seating/Bench/Bench_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <statBases>
       <MaxHitPoints>75</MaxHitPoints>
@@ -75,6 +77,8 @@
       <Beauty>0</Beauty>
       <Comfort>0.5</Comfort>
     </statBases>
+	<placingDraggableDimensions>1</placingDraggableDimensions>
+	<rotatable>false</rotatable>
     <socialPropernessMatters>true</socialPropernessMatters>
     <stuffCategories>
       <li>Metallic</li>
@@ -88,13 +92,14 @@
     <building>
       <isSittable>true</isSittable>
     </building>
+	<researchPrerequisites><li>MF_BasicFurniture</li></researchPrerequisites>
     <uiIconOffset>(0, -0.05)</uiIconOffset>
   </ThingDef>
 
 
   <ThingDef ParentName="ArtableFurnitureBase">
     <defName>Seat_SquareChair</defName>
-    <label>basic chair</label>
+    <label>square chair</label>
     <description>A comfortable and attractive chair not specifically used for dining. Can be used at tables, work stations, and elsewhere.</description>
     <graphicData>
       <texPath>Things/Seating/SquareChair/Chair</texPath>
@@ -184,7 +189,7 @@
     </building>
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
     <researchPrerequisites>
-      <li>ComplexFurniture</li>
+      <li>MF_RoyalFurniture</li>
     </researchPrerequisites>
   </ThingDef>
 
@@ -223,9 +228,6 @@
       <li>Fabric</li>
       <li>Leathery</li>
     </stuffCategories>
-    <researchPrerequisites>
-      <li>ComplexFurniture</li>
-    </researchPrerequisites>
     <costStuffCount>140</costStuffCount>
 	<costList>
       <Gold>60</Gold>
@@ -238,6 +240,9 @@
     <building>
       <isSittable>true</isSittable>
     </building>
+    <researchPrerequisites>
+      <li>MF_RoyalFurniture</li>
+    </researchPrerequisites>
   </ThingDef>
 
 

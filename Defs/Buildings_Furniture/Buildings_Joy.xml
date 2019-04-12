@@ -140,9 +140,9 @@
       <damageData>
         <rect>(0.3,0.3,0.4,0.4)</rect>
       </damageData>
-	  <drawSize>(2,3)</drawSize>
+	  <drawSize>(2.5,2.5)</drawSize>
     </graphicData>
-	<uiIconScale>0.8</uiIconScale>
+	<uiIconScale>0.5</uiIconScale>
     <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
 	<drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
@@ -180,9 +180,6 @@
     </costList>
     <pathCost>10</pathCost>
     <designationCategory>Joy</designationCategory>
-    <hasInteractionCell>True</hasInteractionCell>
-	<interactionCellIcon>DiningChair</interactionCellIcon>
-    <interactionCellOffset>(0,0,1)</interactionCellOffset>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
@@ -199,7 +196,7 @@
     </tradeTags>
   </ThingDef>
  
-  <ThingDef ParentName="FurnitureWithQualityBase">
+  <ThingDef ParentName="ArtableFurnitureBase">
     <defName>Joy_RouletteTable</defName>
     <label>roulette table</label>
     <description>A soft-topped bounded table with a wheel for playing roulette, a good way to train your social skills and luck.</description>
@@ -215,6 +212,7 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
+		<uiIconScale>1.25</uiIconScale>
     <staticSunShadowHeight>0.2</staticSunShadowHeight>
     <castEdgeShadows>True</castEdgeShadows>
     <altitudeLayer>Building</altitudeLayer>
@@ -257,7 +255,7 @@
     <constructionSkillPrerequisite>6</constructionSkillPrerequisite>
   </ThingDef>
   
-  <ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="FurnitureWithQualityBase">
     <defName>Joy_DartsBoard</defName>
     <label>darts board</label>
     <description>A popular game among rimworlds involving throwing darts at a circular target, It's relaxing, and trains shooting skills at a higher rate than horseshoes or hoopstone.</description>
@@ -265,7 +263,7 @@
       <texPath>Things/Joy/DartBoard/DartBoard</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
-	  <drawSize>(1,1.5)</drawSize>
+	  <drawSize>(1,1.2)</drawSize>
       <shadowData>
         <volume>(0.08, 0.2, 0.08)</volume>
         <offset>(0, 0, -0.1)</offset>
@@ -276,9 +274,8 @@
     </graphicData>
     <minifiedDef>MinifiedThing</minifiedDef>
     <altitudeLayer>Building</altitudeLayer>
-	
-    <rotatable>false</rotatable>
-	
+    <rotatable>true</rotatable>
+	<defaultPlacingRot>South</defaultPlacingRot>
     <socialPropernessMatters>true</socialPropernessMatters>
     <thingCategories>
       <li>BuildingsJoy</li>
@@ -315,10 +312,68 @@
     <researchPrerequisites>
       <li>MF_ModernFurniture</li>
     </researchPrerequisites>
+	    <uiIconScale>0.70</uiIconScale>
 		<comps>
 			<li Class="CompProperties_RoomIdentifier">
 				<roomStat>Impressiveness</roomStat>
 			</li>
 		</comps>
   </ThingDef>
+  
+  <ThingDef ParentName="FurnitureWithQualityBase">
+    <defName>Joy_PunchingBag</defName>
+    <label>punching bag</label>
+    <description>A fabric filled punching bag to let out anger on. Can be quite calming and helps to train melee ability.</description>
+    <graphicData>
+      <texPath>Things/Joy/PunchingBag/PunchingBag</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+	  <shaderType>CutoutComplex</shaderType>
+	  <drawSize>(2,1.9)</drawSize>
+      <shadowData>
+        <volume>(0.65, 0.25, 0.6)</volume>
+        <offset>(0, 0, -0.15)</offset>
+      </shadowData>
+      <damageData>
+        <rect>(0.09375,0.296875,0.796875,0.703125)</rect>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <rotatable>false</rotatable>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.50</fillPercent>
+    <building>
+      <joyKind>Meditative</joyKind>
+    </building>
+    <researchPrerequisites>
+      <li>MF_ModernFurniture</li>
+    </researchPrerequisites>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <WorkToBuild>8000</WorkToBuild>
+      <Mass>30</Mass>
+      <Flammability>1.0</Flammability>
+      <Beauty>0</Beauty>
+      <JoyGainFactor>1</JoyGainFactor>
+    </statBases>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>60</costStuffCount>
+    <costList>
+      <Steel>40</Steel>
+    </costList>
+    <passability>Impassable</passability>
+    <designationCategory>Joy</designationCategory>
+		<comps>
+			<li Class="CompProperties_RoomIdentifier">
+				<roomStat>Impressiveness</roomStat>
+			</li>
+		</comps>
+  </ThingDef>
+
 </Defs>

@@ -21,7 +21,7 @@
           <max>30</max>
         </distRange>		
         <pitchRange>
-          <min>0.85</min>        
+          <min>0.95</min>        
           <max>1</max>
         </pitchRange>
       </li>
@@ -49,7 +49,7 @@
           <max>30</max>
         </distRange>		
         <pitchRange>
-          <min>0.85</min>        
+          <min>0.95</min>        
           <max>1</max>
         </pitchRange>
       </li>
@@ -77,7 +77,7 @@
           <max>30</max>
         </distRange>		
         <pitchRange>
-          <min>0.85</min>        
+          <min>0.95</min>        
           <max>1</max>
         </pitchRange>
       </li>
@@ -105,7 +105,7 @@
           <max>30</max>
         </distRange>		
         <pitchRange>
-          <min>0.85</min>        
+          <min>0.95</min>        
           <max>1</max>
         </pitchRange>
       </li>

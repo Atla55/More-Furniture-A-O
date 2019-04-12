@@ -9,7 +9,7 @@ namespace AOMoreFurniture
     {
         protected override void WatchTickAction()
         {
-            bool flag = Gen.IsHashIntervalTick(this.pawn, 400);
+            bool flag = Gen.IsHashIntervalTick(this.pawn, (400 - Convert.ToInt32((float)pawn.skills.GetSkill(SkillDefOf.Shooting).Level) * 10));
             if (flag)
             {
                 JobDriver_PlayDarts.ThrowDart(this.pawn, base.TargetA.Cell);
@@ -28,7 +28,7 @@ namespace AOMoreFurniture
                     thingDef = ThingDefOf.Mote_FlyingDart;
                 MoteThrown moteThrown = (MoteThrown)ThingMaker.MakeThing(thingDef, null);
                 moteThrown.Scale = 0.75f;
-                moteThrown.rotationRate = 0.01f;
+                moteThrown.rotationRate = 0.02f;
                 moteThrown.exactPosition = thrower.DrawPos;
                 moteThrown.exactRotation = Vector3Utility.AngleFlat(vector - moteThrown.exactPosition);
                 moteThrown.SetVelocity(Vector3Utility.AngleFlat(vector - moteThrown.exactPosition), num);

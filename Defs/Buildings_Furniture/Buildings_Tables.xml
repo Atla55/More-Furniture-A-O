@@ -24,6 +24,7 @@
       <Beauty>0.5</Beauty>
     </statBases>
 	<rotatable>false</rotatable>
+	<researchPrerequisites><li>MF_BasicFurniture</li></researchPrerequisites>
     <size>(1,1)</size>
     <costStuffCount>20</costStuffCount>
   </ThingDef>
@@ -38,8 +39,7 @@
       <linkType>CornerFiller</linkType>
 	  <shaderType>CutoutComplex</shaderType>
       <linkFlags>
-        <li>Wall</li>
-        <li>Rock</li>
+        <li>Custom6</li>
       </linkFlags>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
@@ -62,6 +62,7 @@
     </statBases>
 	<placingDraggableDimensions>1</placingDraggableDimensions>
 	<rotatable>false</rotatable>
+	<researchPrerequisites><li>ComplexFurniture</li></researchPrerequisites>
     <size>(1,1)</size>
     <costStuffCount>15</costStuffCount>
   </ThingDef>
@@ -78,6 +79,7 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
+	<researchPrerequisites><li>MF_RoyalFurniture</li></researchPrerequisites>
   </ThingDef>
   
   <ThingDef ParentName="RoyalTableDesc">

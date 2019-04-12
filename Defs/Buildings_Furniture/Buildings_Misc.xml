@@ -10,6 +10,7 @@
       <texPath>Things/Other/LampOutdoor</texPath>
 	  <drawSize>(1.1,2.5)</drawSize>
     </graphicData>
+	    <tickerType>Rare</tickerType>
     <costList>
       <Steel>40</Steel>
     </costList>
@@ -22,6 +23,12 @@
         <compClass>CompPowerTrader</compClass>
 		<shortCircuitInRain>false</shortCircuitInRain>
         <basePowerConsumption>30</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Schedule">
+        <!-- Match plant growing times -->
+        <startTime>0.8</startTime>
+        <endTime>0.3</endTime>
+        <offMessage>Off during daylight hours</offMessage>
       </li>
       <li Class="CompProperties_Glower">
         <glowRadius>18</glowRadius>

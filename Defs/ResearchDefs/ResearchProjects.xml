@@ -23,8 +23,8 @@
 		<description>Build complex furniture like beds, end tables, dining chairs, armchairs, dressers, tool cabinets, billiard tables, and poker tables, vents, sarcophagi, and more.</description>
 		<baseCost>400</baseCost>
 		<techLevel>Medieval</techLevel>
-		<researchViewX>2</researchViewX>
-		<researchViewY>1</researchViewY>
+		<researchViewY>2</researchViewY>
+		<researchViewX>1</researchViewX>
 		<prerequisites>
 		  <li>MF_BasicFurniture</li>
 		</prerequisites>
@@ -38,10 +38,10 @@
 		<label>royal furniture</label>
 		<tab>OA_MoreFurniture</tab>
 		<description>Build luxury furniture, usually only seen in the houses of the wealthy elite. Including poster beds, royal chairs, tables and armchairs.</description>
-		<baseCost>600</baseCost>
+		<baseCost>800</baseCost>
 		<techLevel>Medieval</techLevel>
-		<researchViewX>3</researchViewX>
-		<researchViewY>1</researchViewY>
+		<researchViewY>3</researchViewY>
+		<researchViewX>1</researchViewX>
 		<prerequisites>
 		  <li>ComplexFurniture</li>
 		</prerequisites>
@@ -51,8 +51,8 @@
 		<defName>MF_ModernFurniture</defName>
 		<label>modern furniture</label>
 		<tab>OA_MoreFurniture</tab>
-		<description>Learn to build fast, cost effective furniture of the modern day such as roulette tables, dart boards and</description>
-		<baseCost>500</baseCost>
+		<description>Learn to build furniture of the modern day such as roulette tables, dart boards and ergonomic beds.</description>
+		<baseCost>800</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>2</researchViewX>
 		<researchViewY>2</researchViewY>
@@ -68,22 +68,8 @@
 		<description>Build industry boosting pieces of furniture such as filing cabinets, tool lockers, worktops and more.</description>
 		<baseCost>600</baseCost>
 		<techLevel>Industrial</techLevel>
-		<researchViewX>3</researchViewX>
-		<researchViewY>2</researchViewY>
-		<prerequisites>
-		  <li>MF_ModernFurniture</li>
-		</prerequisites>
-	  </ResearchProjectDef>
-	 
-	  <ResearchProjectDef>
-		<defName>MF_SpacerFurniture</defName>
-		<label>spacer furniture</label>
-		<tab>OA_MoreFurniture</tab>
-		<description>Build the cutting edge in relaxation and comfort, usually only seen on glitterworlds. Including ergononic beds</description>
-		<baseCost>600</baseCost>
-		<techLevel>Spacer</techLevel>
-		<researchViewX>2</researchViewX>
 		<researchViewY>3</researchViewY>
+		<researchViewX>2</researchViewX>
 		<prerequisites>
 		  <li>MF_ModernFurniture</li>
 		</prerequisites>
