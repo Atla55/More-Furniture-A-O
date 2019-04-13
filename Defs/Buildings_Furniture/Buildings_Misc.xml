@@ -31,7 +31,7 @@
         <offMessage>Off during daylight hours</offMessage>
       </li>
       <li Class="CompProperties_Glower">
-        <glowRadius>18</glowRadius>
+        <glowRadius>20</glowRadius>
         <glowColor>(217,217,208,0)</glowColor>
       </li>
     </comps>
@@ -40,6 +40,38 @@
     </placeWorkers>
   </ThingDef>
 
-
+  <ThingDef ParentName="LampBase">
+    <defName>Light_ModernLamp</defName>
+    <label>modern lamp</label>
+    <description>A power saving lamp that more effectively converts electricity to light, useful for lighting rooms. Will short circuit in rain.</description>
+	<fillPercent>0.20</fillPercent>
+    <graphicData>
+      <texPath>Things/Other/ModernLamp</texPath>
+	  <drawSize>(1.1,1.1)</drawSize>
+    </graphicData>
+	    <tickerType>Rare</tickerType>
+    <costList>
+      <Steel>35</Steel>
+    </costList>
+	<size>(1,1)</size>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+		<shortCircuitInRain>false</shortCircuitInRain>
+        <basePowerConsumption>8</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>16</glowRadius>
+        <glowColor>(255,255,255,0)</glowColor>
+      </li>
+    </comps>
+    <statBases>
+      <WorkToBuild>400</WorkToBuild>
+    </statBases>
+    <researchPrerequisites>
+      <li>Electricity</li>
+	  <li>MF_ModernFurniture</li>
+    </researchPrerequisites>
+  </ThingDef>
 
 </Defs>

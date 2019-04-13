@@ -66,7 +66,7 @@
     <joyDuration>4000</joyDuration>
     <joyMaxParticipants>2</joyMaxParticipants>
     <joySkill>Shooting</joySkill>
-    <joyXpPerTick>0.04</joyXpPerTick>
+    <joyXpPerTick>0.03</joyXpPerTick>
     <joyKind>Gaming_Dexterity</joyKind>
     <taleOnCompletion>PlayedGame</taleOnCompletion>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
@@ -95,7 +95,7 @@
     <joyDuration>4000</joyDuration>
     <joyMaxParticipants>1</joyMaxParticipants>
     <joySkill>Melee</joySkill>
-    <joyXpPerTick>0.04</joyXpPerTick>
+    <joyXpPerTick>0.03</joyXpPerTick>
     <joyKind>Meditative</joyKind>
     <taleOnCompletion>Tale_UsedPunchingBag</taleOnCompletion>
     <allowOpportunisticPrefix>true</allowOpportunisticPrefix>

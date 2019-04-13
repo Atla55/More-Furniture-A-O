@@ -10,7 +10,7 @@ using RimWorld;
 namespace AOMoreFurniture
 {
     public class JobDriver_PlayPunchingBag : JobDriver_WatchBuilding
-    {
+    { 
         protected override void WatchTickAction()
         {
             Random rnd = new Random();
@@ -26,7 +26,7 @@ namespace AOMoreFurniture
                         RimWorld.SoundDefOf.Pawn_Melee_Punch_HitPawn.PlayOneShot(new TargetInfo(this.pawn.Position, this.pawn.Map, false));
                         break;
                 }
-
+               
             }
             base.WatchTickAction();
         }

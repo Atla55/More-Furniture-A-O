@@ -4,13 +4,26 @@
   <ThingDef ParentName="MoteBase">
     <defName>Mote_HoldingChips</defName>
     <thingClass>MoteDualAttached</thingClass>
-    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <altitudeLayer>MoteLow</altitudeLayer>
     <mote>
       <solidTime>600</solidTime>
       <rotateTowardsTarget>true</rotateTowardsTarget>
     </mote>
     <graphicData>
       <texPath>Things/Mote/PlayingChips</texPath>
+    </graphicData>
+  </ThingDef>
+ 
+  <ThingDef ParentName="MoteBase">
+    <defName>Mote_HoldingGloves</defName>
+    <thingClass>MoteDualAttached</thingClass>
+    <altitudeLayer>MoteLow</altitudeLayer>
+    <mote>
+      <solidTime>600</solidTime>
+      <rotateTowardsTarget>true</rotateTowardsTarget>
+    </mote>
+    <graphicData>
+      <texPath>Things/Mote/BoxingGloves</texPath>
     </graphicData>
   </ThingDef>
 

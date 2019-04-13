@@ -37,7 +37,7 @@
 		<defName>MF_RoyalFurniture</defName>
 		<label>royal furniture</label>
 		<tab>OA_MoreFurniture</tab>
-		<description>Build luxury furniture, usually only seen in the houses of the wealthy elite. Including poster beds, royal chairs, tables and armchairs.</description>
+		<description>Build luxury furniture focused strongly on aesthetics and beauty over practicality, usually only seen in the houses of the wealthy elite. Including poster beds, royal chairs, tables and armchairs.</description>
 		<baseCost>800</baseCost>
 		<techLevel>Medieval</techLevel>
 		<researchViewY>3</researchViewY>
@@ -51,7 +51,7 @@
 		<defName>MF_ModernFurniture</defName>
 		<label>modern furniture</label>
 		<tab>OA_MoreFurniture</tab>
-		<description>Learn to build furniture of the modern day such as roulette tables, dart boards and ergonomic beds.</description>
+		<description>Learn to build furniture of the modern day that is focused on practicality over beauty, such as roulette tables, wardrobes, dart boards, punching bags and ergonomic beds.</description>
 		<baseCost>800</baseCost>
 		<techLevel>Industrial</techLevel>
 		<researchViewX>2</researchViewX>

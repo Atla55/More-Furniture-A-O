@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "HospitalBed"]/comps/li[@Class = "CompProperties_Refuelable"]/linkableFacilities</xpath>
+		<value>
+		  <li>Table_RoyalDresser</li>
+		  <li>Table_RoyalEndTable</li>
+		  <li>Table_Wardrobe</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "RoyalBed"]/comps/li[@Class = "CompProperties_Refuelable"]/linkableFacilities</xpath>
+		<value>
+		  <li>Table_RoyalDresser</li>
+		  <li>Table_RoyalEndTable</li>
+		  <li>Table_Wardrobe</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "DoubleBed"]/comps/li[@Class = "CompProperties_Refuelable"]/linkableFacilities</xpath>
+		<value>
+		  <li>Table_RoyalDresser</li>
+		  <li>Table_RoyalEndTable</li>
+		  <li>Table_Wardrobe</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName = "Bed"]/comps/li[@Class = "CompProperties_Refuelable"]/linkableFacilities</xpath>
+		<value>
+		  <li>Table_RoyalDresser</li>
+		  <li>Table_RoyalEndTable</li>
+		  <li>Table_Wardrobe</li>
+		</value>
+	</Operation>
+</Patch>
