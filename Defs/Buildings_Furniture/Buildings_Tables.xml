@@ -53,6 +53,11 @@
       </damageData>
     </graphicData>
 	<uiIconPath>Things/Tables/Counter/Counter_MenuIcon</uiIconPath>
+    <building>
+      <blueprintGraphicData>
+        <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+      </blueprintGraphicData>
+    </building>
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
       <WorkToBuild>500</WorkToBuild>
@@ -73,10 +78,7 @@
       <graphicClass>Graphic_Multi</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
       <damageData>
-        <cornerTL>Damage/Corner</cornerTL>
-        <cornerTR>Damage/Corner</cornerTR>
-        <cornerBL>Damage/Corner</cornerBL>
-        <cornerBR>Damage/Corner</cornerBR>
+        <rect>(0.15,0.15,0.2,0.2)</rect>
       </damageData>
     </graphicData>
 	<researchPrerequisites><li>MF_RoyalFurniture</li></researchPrerequisites>

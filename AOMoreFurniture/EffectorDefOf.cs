@@ -14,5 +14,7 @@ namespace AOMoreFurniture
         }
 
         public static EffecterDef Joy_HoldChips;
+
+        public static EffecterDef Joy_PlayPiano;
     }
 }

@@ -1,77 +1,128 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="LampBase">
-    <defName>Light_Streetlamp</defName>
-    <label>outdoor lamp</label>
-    <description>A tall electrical lamp that lights an area, able to be placed outside without catching fire, making it ideal for road lighting.</description>
-	<fillPercent>0.30</fillPercent>
-    <graphicData>
-      <texPath>Things/Other/LampOutdoor</texPath>
-	  <drawSize>(1.1,2.5)</drawSize>
-    </graphicData>
-	    <tickerType>Rare</tickerType>
-    <costList>
-      <Steel>40</Steel>
-    </costList>
-    <statBases>
-      <Mass>20</Mass>
-    </statBases>
-	<size>(1,1)</size>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-		<shortCircuitInRain>false</shortCircuitInRain>
-        <basePowerConsumption>30</basePowerConsumption>
-      </li>
-      <li Class="CompProperties_Schedule">
-        <!-- Match plant growing times -->
-        <startTime>0.8</startTime>
-        <endTime>0.3</endTime>
-        <offMessage>Off during daylight hours</offMessage>
-      </li>
-      <li Class="CompProperties_Glower">
-        <glowRadius>20</glowRadius>
-        <glowColor>(217,217,208,0)</glowColor>
-      </li>
-    </comps>
-    <placeWorkers>
-      <li>PlaceWorker_NotUnderRoof</li>
-    </placeWorkers>
-  </ThingDef>
+	<ThingDef ParentName="LampBase">
+		<defName>Light_Streetlamp</defName>
+		<label>outdoor lamp</label>
+		<description>A tall electrical lamp that lights an area, able to be placed outside without catching fire, making it ideal for road lighting and only turns on at night.</description>
+		<fillPercent>0.30</fillPercent>
+		<graphicData>
+			<texPath>Things/Other/LampOutdoor</texPath>
+			<drawSize>(1.2,2.5)</drawSize>
+		</graphicData>
+		<tickerType>Rare</tickerType>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<statBases>
+			<Mass>20</Mass>
+		</statBases>
+		<size>(1,1)</size>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>false</shortCircuitInRain>
+				<basePowerConsumption>40</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Schedule">
+				<!-- Match plant growing times -->
+				<startTime>0.70</startTime>
+				<endTime>0.35</endTime>
+				<offMessage>Off during daylight hours</offMessage>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>20</glowRadius>
+				<glowColor>(217,217,208,0)</glowColor>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_NotUnderRoof</li>
+		</placeWorkers>
+	</ThingDef>
 
-  <ThingDef ParentName="LampBase">
-    <defName>Light_ModernLamp</defName>
-    <label>modern lamp</label>
-    <description>A power saving lamp that more effectively converts electricity to light, useful for lighting rooms. Will short circuit in rain.</description>
-	<fillPercent>0.20</fillPercent>
-    <graphicData>
-      <texPath>Things/Other/ModernLamp</texPath>
-	  <drawSize>(1.1,1.1)</drawSize>
-    </graphicData>
-	    <tickerType>Rare</tickerType>
-    <costList>
-      <Steel>35</Steel>
-    </costList>
-	<size>(1,1)</size>
-    <comps>
-      <li Class="CompProperties_Power">
-        <compClass>CompPowerTrader</compClass>
-		<shortCircuitInRain>false</shortCircuitInRain>
-        <basePowerConsumption>8</basePowerConsumption>
-      </li>
-      <li Class="CompProperties_Glower">
-        <glowRadius>16</glowRadius>
-        <glowColor>(255,255,255,0)</glowColor>
-      </li>
-    </comps>
-    <statBases>
-      <WorkToBuild>400</WorkToBuild>
-    </statBases>
-    <researchPrerequisites>
-      <li>Electricity</li>
-	  <li>MF_ModernFurniture</li>
-    </researchPrerequisites>
-  </ThingDef>
+	<ThingDef ParentName="LampBase">
+		<defName>Light_ModernLamp</defName>
+		<label>modern lamp</label>
+		<description>A power saving lamp that more effectively converts electricity to light, useful for lighting rooms. Will short circuit in rain.</description>
+		<fillPercent>0.20</fillPercent>
+		<graphicData>
+			<texPath>Things/Other/ModernLamp</texPath>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<tickerType>Rare</tickerType>
+		<costList>
+			<Steel>40</Steel>
+		</costList>
+		<size>(1,1)</size>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>10</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>16</glowRadius>
+				<glowColor>(255,255,255,0)</glowColor>
+			</li>
+		</comps>
+		<statBases>
+			<WorkToBuild>400</WorkToBuild>
+			<Mass>3</Mass>
+		</statBases>
+		<researchPrerequisites>
+			<li>Electricity</li>
+			<li>MF_ModernFurniture</li>
+		</researchPrerequisites>
+	</ThingDef>
 
+	<ThingDef ParentName="FurnitureWithQualityBase">
+		<defName>Misc_FileCabinet</defName>
+		<label>file cabinet</label>
+		<description>A piece of furniture used for organising documents and records in paper form.</description>
+		<graphicData>
+			<texPath>Things/Other/FilingCabinet/FilingCabinet</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(3,3)</drawSize>
+			<damageData>
+				<rect>(0.15,0.15,1.7,1.7)</rect>
+			</damageData>
+		</graphicData>
+		<size>(1,1)</size>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>0.8</fillPercent>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<statBases>
+			<MaxHitPoints>60</MaxHitPoints>
+			<WorkToBuild>1600</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>5</Beauty>
+			<Mass>15</Mass>
+		</statBases>
+		<stuffCategories>
+			<li>Metallic</li>
+			<li>Woody</li>
+			<li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<comps>
+			<li Class="CompProperties_Facility">
+				<statOffsets>
+					<ResearchSpeedFactor>0.05</ResearchSpeedFactor>
+				</statOffsets>
+				<maxSimultaneous>1</maxSimultaneous>
+				        <maxDistance>6</maxDistance>
+			</li>
+		</comps>
+		<placeWorkers>
+			<li>PlaceWorker_ShowFacilitiesConnections</li>
+		</placeWorkers>
+		<researchPrerequisites>
+			<li>ComplexFurniture</li>
+		</researchPrerequisites>
+		<designationCategory>Misc</designationCategory>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		<uiIconScale>0.7</uiIconScale>
+	</ThingDef>
 </Defs>

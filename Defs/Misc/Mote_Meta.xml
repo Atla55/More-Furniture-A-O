@@ -4,7 +4,7 @@
   <ThingDef ParentName="MoteBase">
     <defName>Mote_HoldingChips</defName>
     <thingClass>MoteDualAttached</thingClass>
-    <altitudeLayer>MoteLow</altitudeLayer>
+    <altitudeLayer>Projectile</altitudeLayer>
     <mote>
       <solidTime>600</solidTime>
       <rotateTowardsTarget>true</rotateTowardsTarget>
@@ -17,7 +17,7 @@
   <ThingDef ParentName="MoteBase">
     <defName>Mote_HoldingGloves</defName>
     <thingClass>MoteDualAttached</thingClass>
-    <altitudeLayer>MoteLow</altitudeLayer>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
     <mote>
       <solidTime>600</solidTime>
       <rotateTowardsTarget>true</rotateTowardsTarget>
@@ -32,11 +32,26 @@
     <graphicData>
       <texPath>Things/Mote/PlayingDart</texPath>
     </graphicData>
-    <altitudeLayer>MoteLow</altitudeLayer>
+    <altitudeLayer>Projectile</altitudeLayer>
     <mote>
-      <solidTime>10</solidTime>
-      <fadeOutTime>4</fadeOutTime>
+    	<collide>true</collide>
+      <solidTime>2</solidTime>
+      <fadeOutTime>0.1</fadeOutTime>
       <landSound>Standard_Drop</landSound>
+    </mote>
+  </ThingDef>
+ 
+    <ThingDef ParentName="MoteBase">
+    <defName>Mote_MusicalNoteA</defName>
+    <graphicData>
+      <texPath>Things/Mote/MusicalNoteA</texPath>
+    </graphicData>
+    <thingClass>MoteThrownAttached</thingClass>
+    <altitudeLayer>MetaOverlays</altitudeLayer>
+    <mote>
+      <fadeInTime>0.50</fadeInTime>
+      <solidTime>2</solidTime>
+      <fadeOutTime>0.5</fadeOutTime>
     </mote>
   </ThingDef>
 </Defs>

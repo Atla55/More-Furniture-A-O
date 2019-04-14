@@ -17,7 +17,7 @@
     <JoyGiverDef>
     <defName>Play_Roulette</defName>
     <giverClass>JoyGiver_InteractBuildingSitAdjacent</giverClass>
-    <baseChance>4</baseChance>
+    <baseChance>3</baseChance>
 	<requireChair>false</requireChair>
     <thingDefs>
       <li>Joy_RouletteTable</li>
@@ -60,6 +60,34 @@
   </JoyGiverDef>
   
   <JobDef>
+    <defName>Play_Piano</defName>
+    <driverClass>AOMoreFurniture.JobDriver_PlayPiano</driverClass>
+    <reportString>playing piano.</reportString>
+    <joyDuration>4000</joyDuration>
+    <joyMaxParticipants>1</joyMaxParticipants>
+    <joySkill>Artistic</joySkill>
+    <joyXpPerTick>0.05</joyXpPerTick>
+    <joyKind>Meditative</joyKind>
+    <taleOnCompletion>PlayedGame</taleOnCompletion>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+    <JoyGiverDef>
+    <defName>Play_Piano</defName>
+    <giverClass>JoyGiver_WatchBuilding</giverClass>
+    <baseChance>1</baseChance>
+	<desireSit>false</desireSit>
+    <thingDefs>
+      <li>Joy_Piano</li>
+    </thingDefs>
+    <jobDef>Play_Piano</jobDef>
+    <joyKind>Meditative</joyKind>
+    <requiredCapacities>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+  
+  <JobDef>
     <defName>Play_DartsBoard</defName>
     <driverClass>AOMoreFurniture.JobDriver_PlayDarts</driverClass>
     <reportString>playing darts.</reportString>
@@ -75,7 +103,7 @@
     <JoyGiverDef>
     <defName>Play_DartsBoard</defName>
     <giverClass>JoyGiver_WatchBuilding</giverClass>
-    <baseChance>2.5</baseChance>
+    <baseChance>2</baseChance>
     <thingDefs>
       <li>Joy_DartsBoard</li>
     </thingDefs>
@@ -112,7 +140,6 @@
     <jobDef>Play_PunchingBag</jobDef>
     <joyKind>Meditative</joyKind>
     <requiredCapacities>
-      <li>Sight</li>
       <li>Manipulation</li>
     </requiredCapacities>
   </JoyGiverDef>

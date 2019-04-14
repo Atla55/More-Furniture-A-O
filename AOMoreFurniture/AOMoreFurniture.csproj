@@ -49,6 +49,7 @@
     <Compile Include="EffectorDefOf.cs" />
     <Compile Include="JobDriver_PlayArcade.cs" />
     <Compile Include="JobDriver_PlayDarts.cs" />
+    <Compile Include="JobDriver_PlayPiano.cs" />
     <Compile Include="JobDriver_PlayPunchingBag.cs" />
     <Compile Include="JobDriver_PlayRoulette.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

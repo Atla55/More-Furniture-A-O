@@ -45,7 +45,6 @@
     <pathCost>60</pathCost>
     <staticSunShadowHeight>0.17</staticSunShadowHeight>
     <castEdgeShadows>True</castEdgeShadows>
-    <designationHotKey>Misc2</designationHotKey>
     <techLevel>Neolithic</techLevel>
     <uiIconScale>0.90</uiIconScale>
   </ThingDef>
@@ -100,7 +99,6 @@
     <pathCost>60</pathCost>
     <staticSunShadowHeight>0.17</staticSunShadowHeight>
     <castEdgeShadows>True</castEdgeShadows>
-    <designationHotKey>Misc2</designationHotKey>
     <techLevel>Medieval</techLevel>
     <researchPrerequisites>
       <li>MF_BasicFurniture</li>
@@ -164,7 +162,6 @@
     <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
     <staticSunShadowHeight>0.17</staticSunShadowHeight>
     <castEdgeShadows>True</castEdgeShadows>
-    <designationHotKey>Misc3</designationHotKey>
     <techLevel>Medieval</techLevel>
     <researchPrerequisites>
       <li>MF_RoyalFurniture</li>
@@ -299,7 +296,7 @@
       <Mass>75</Mass>
       <Beauty>2</Beauty>
       <BedRestEffectiveness>1.15</BedRestEffectiveness>
-      <Comfort>0.9</Comfort>
+      <Comfort>1</Comfort>
       <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
 			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
     </statBases>
@@ -310,7 +307,7 @@
     </stuffCategories>
         <costStuffCount>60</costStuffCount>
     <costList>
-      <ComponentIndustrial>5</ComponentIndustrial>
+      <ComponentIndustrial>3</ComponentIndustrial>
     </costList>
     <building>
       <bed_showSleeperBody>False</bed_showSleeperBody>
@@ -322,7 +319,6 @@
     <leaveResourcesWhenKilled>False</leaveResourcesWhenKilled>
     <staticSunShadowHeight>0.17</staticSunShadowHeight>
     <castEdgeShadows>True</castEdgeShadows>
-    <designationHotKey>Misc3</designationHotKey>
     <techLevel>Spacer</techLevel>
     <researchPrerequisites>
       <li>MF_ModernFurniture</li>
@@ -361,8 +357,8 @@
       <WorkToBuild>30000</WorkToBuild>
       <Mass>95</Mass>
       <Beauty>4</Beauty>
-      <BedRestEffectiveness>1.18</BedRestEffectiveness>
-      <Comfort>1</Comfort>
+      <BedRestEffectiveness>1.2</BedRestEffectiveness>
+      <Comfort>1.05</Comfort>
       <ImmunityGainSpeedFactor>1.1</ImmunityGainSpeedFactor>
 			<SurgerySuccessChanceFactor>1</SurgerySuccessChanceFactor>
     </statBases>
@@ -373,7 +369,7 @@
     </stuffCategories>
         <costStuffCount>110</costStuffCount>
     <costList>
-      <ComponentIndustrial>10</ComponentIndustrial>
+      <ComponentIndustrial>6</ComponentIndustrial>
     </costList>
     <building>
       <bed_showSleeperBody>False</bed_showSleeperBody>
@@ -385,7 +381,6 @@
     <leaveResourcesWhenKilled>False</leaveResourcesWhenKilled>
     <staticSunShadowHeight>0.17</staticSunShadowHeight>
     <castEdgeShadows>True</castEdgeShadows>
-    <designationHotKey>Misc3</designationHotKey>
     <techLevel>Spacer</techLevel>
     <researchPrerequisites>
       <li>MF_ModernFurniture</li>
@@ -401,7 +396,7 @@
     <graphicData>
       <texPath>Things/Bedroom/Wardrobe/Wardrobe</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(3,3)</drawSize>
+      <drawSize>(3.5,3)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>
@@ -409,6 +404,7 @@
         <cornerBR>Damage/Corner</cornerBR>
       </damageData>
     </graphicData>
+	<uiIconPath>Things/Bedroom/Wardrobe/Wardrobe_MenuIcon</uiIconPath>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
     <fillPercent>0.4</fillPercent>
