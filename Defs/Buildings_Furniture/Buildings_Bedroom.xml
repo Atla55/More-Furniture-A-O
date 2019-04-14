@@ -396,7 +396,7 @@
     <graphicData>
       <texPath>Things/Bedroom/Wardrobe/Wardrobe</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
-      <drawSize>(3.5,3)</drawSize>
+      <drawSize>(3.55,3.02)</drawSize>
       <damageData>
         <cornerTL>Damage/Corner</cornerTL>
         <cornerTR>Damage/Corner</cornerTR>

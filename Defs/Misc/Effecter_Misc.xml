@@ -11,7 +11,7 @@
       <li>
         <subEffecterClass>SubEffecter_SoundIntermittent</subEffecterClass>
         <soundDef>PokerChips</soundDef>
-        <intermittentSoundInterval><min>750</min><max>1500</max></intermittentSoundInterval>
+        <intermittentSoundInterval><min>650</min><max>1500</max></intermittentSoundInterval>
       </li>
     </children>
   </EffecterDef>
@@ -20,13 +20,18 @@
     <defName>Joy_PlayPiano</defName>
     <children>
       <li>
+        <subEffecterClass>SubEffecter_SoundIntermittent</subEffecterClass>
+        <soundDef>Piano_SFX</soundDef>
+        <intermittentSoundInterval><min>500</min><max>750</max></intermittentSoundInterval>
+      </li>
+      <li>
         <subEffecterClass>SubEffecter_DrifterEmoteChance</subEffecterClass>
         <scale>
-          <min>0.6</min>
-          <max>0.8</max>
+          <min>0.5</min>
+          <max>0.7</max>
         </scale>
-        <chancePerTick>0.006</chancePerTick>
-        <positionRadius>0.75</positionRadius>
+        <chancePerTick>0.005</chancePerTick>
+        <positionRadius>0.55</positionRadius>
         <moteDef>Mote_MusicalNoteA</moteDef>
         <speed>
           <min>0.07</min>

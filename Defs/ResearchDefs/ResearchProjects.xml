@@ -61,20 +61,6 @@
 		</prerequisites>
 	  </ResearchProjectDef>
 	 
-	  <ResearchProjectDef>
-		<defName>MF_IndustryFurniture</defName>
-		<label>workshop furniture</label>
-		<tab>OA_MoreFurniture</tab>
-		<description>Build industry boosting pieces of furniture such as filing cabinets, tool lockers, worktops and more.</description>
-		<baseCost>600</baseCost>
-		<techLevel>Industrial</techLevel>
-		<researchViewY>3</researchViewY>
-		<researchViewX>2</researchViewX>
-		<prerequisites>
-		  <li>MF_ModernFurniture</li>
-		</prerequisites>
-	  </ResearchProjectDef>
-	  
 	<ResearchProjectDef>
 		<defName>TubeTelevision</defName>
 		<label>basic electronics</label>

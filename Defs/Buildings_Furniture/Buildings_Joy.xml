@@ -199,7 +199,7 @@
   <ThingDef ParentName="ArtableFurnitureBase">
     <defName>Joy_Piano</defName>
     <label>grand piano</label>
-    <description>A large playable piano, requires skill to play as is a great way to develop artistic talent.</description>
+    <description>A large playable piano for practising on, quite enjoyable and it is a great way to develop artistic talent.</description>
     <graphicData>
       <texPath>Things/Joy/Piano/Piano</texPath>
       <graphicClass>Graphic_Multi</graphicClass>
