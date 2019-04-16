@@ -22,5 +22,9 @@ namespace AOMoreFurniture
         public static SoundDef Arcade_SFXThree;
 
         public static SoundDef Arcade_SFXFour;
+
+        public static SoundDef Computer_SFXOne;
+
+        public static SoundDef Computer_SFXTwo;
     }
 }

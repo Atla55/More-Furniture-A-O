@@ -143,4 +143,63 @@
       <li>Manipulation</li>
     </requiredCapacities>
   </JoyGiverDef>
+  
+ 
+  <JobDef>
+    <defName>Play_ComputerIndustrial</defName>
+    <driverClass>AOMoreFurniture.JobDriver_PlayComputerIndustrial</driverClass>
+    <reportString>using computer.</reportString>
+    <joyDuration>4000</joyDuration>
+    <joyMaxParticipants>1</joyMaxParticipants>
+    <joySkill>Crafting</joySkill>
+    <joyXpPerTick>0.01</joyXpPerTick>
+    <joyKind>Gaming_Electronic</joyKind>
+    <taleOnCompletion>Tale_UsedComputer</taleOnCompletion>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+    <JoyGiverDef>
+    <defName>Play_ComputerIndustrial</defName>
+    <giverClass>JoyGiver_WatchBuilding</giverClass>
+    <baseChance>0.5</baseChance>
+	<requireChair>true</requireChair>
+    <thingDefs>
+      <li>Joy_InudstrialComputer</li>
+    </thingDefs>
+    <jobDef>Play_ComputerIndustrial</jobDef>
+    <joyKind>Gaming_Electronic</joyKind>
+    <requiredCapacities>
+	  <li>Sight</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
+  
+  <JobDef>
+    <defName>Play_ComputerModern</defName>
+    <driverClass>AOMoreFurniture.JobDriver_PlayComputerModern</driverClass>
+    <reportString>using computer.</reportString>
+    <joyDuration>4000</joyDuration>
+    <joyMaxParticipants>1</joyMaxParticipants>
+    <joySkill>Crafting</joySkill>
+    <joyXpPerTick>0.03</joyXpPerTick>
+    <joyKind>Gaming_Electronic</joyKind>
+    <taleOnCompletion>Tale_UsedComputer</taleOnCompletion>
+    <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+  </JobDef>
+
+    <JoyGiverDef>
+    <defName>Play_ComputerModern</defName>
+    <giverClass>JoyGiver_WatchBuilding</giverClass>
+    <baseChance>0.5</baseChance>
+	<requireChair>true</requireChair>
+    <thingDefs>
+      <li>Joy_ModernComputer</li>
+    </thingDefs>
+    <jobDef>Play_ComputerModern</jobDef>
+    <joyKind>Gaming_Electronic</joyKind>
+    <requiredCapacities>
+	  <li>Sight</li>
+      <li>Manipulation</li>
+    </requiredCapacities>
+  </JoyGiverDef>
 </Defs>

@@ -14,11 +14,11 @@
         </grains>      
         <volumeRange>
           <min>4.46512</min>        
-          <max>8.4651</max>
+          <max>4.2651</max>
         </volumeRange>     
         <distRange>
           <min>20</min>
-          <max>30</max>
+          <max>25</max>
         </distRange>		
         <pitchRange>
           <min>0.95</min>        
@@ -42,7 +42,7 @@
         </grains>      
         <volumeRange>
           <min>4.46512</min>        
-          <max>8.4651</max>
+          <max>4.2651</max>
         </volumeRange>   
         <distRange>
           <min>20</min>
@@ -69,8 +69,8 @@
           </li>
         </grains>      
         <volumeRange>
-          <min>4.46512</min>        
-          <max>8.4651</max>
+          <min>4.16512</min>        
+          <max>4.2</max>
         </volumeRange>  
         <distRange>
           <min>20</min>
@@ -98,7 +98,7 @@
         </grains>      
         <volumeRange>
           <min>4.46512</min>        
-          <max>8.4651</max>
+          <max>4.2</max>
         </volumeRange>
         <distRange>
           <min>20</min>
@@ -125,16 +125,72 @@
           </li>
         </grains>      
         <volumeRange>
-          <min>4.46512</min>        
-          <max>5.4651</max>
+          <min>5.16512</min>        
+          <max>6.4651</max>
         </volumeRange>
         <distRange>
-          <min>10</min>
-          <max>15</max>
+          <min>15</min>
+          <max>25</max>
         </distRange>		
         <pitchRange>
           <min>0.7</min>        
           <max>1.1</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Computer_SFXOne</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>3</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Computer/ComputerSFXOne</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>4.46512</min>        
+          <max>5.2</max>
+        </volumeRange>
+        <distRange>
+          <min>20</min>
+          <max>30</max>
+        </distRange>		
+        <pitchRange>
+          <min>0.9</min>        
+          <max>1.05</max>
+        </pitchRange>
+      </li>
+    </subSounds>
+  </SoundDef>
+  
+  <SoundDef>
+    <defName>Computer_SFXTwo</defName>  
+    <context>MapOnly</context>
+    <eventNames />  
+    <maxSimultaneous>1</maxSimultaneous>  
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Folder">
+            <clipFolderPath>Computer/ComputerSFXTwo</clipFolderPath>
+          </li>
+        </grains>      
+        <volumeRange>
+          <min>4.46512</min>        
+          <max>4.2</max>
+        </volumeRange>
+        <distRange>
+          <min>20</min>
+          <max>30</max>
+        </distRange>		
+        <pitchRange>
+          <min>0.9</min>        
+          <max>1.05</max>
         </pitchRange>
       </li>
     </subSounds>

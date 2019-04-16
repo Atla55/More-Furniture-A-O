@@ -47,7 +47,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="EffectorDefOf.cs" />
+    <Compile Include="HediffDefOf.cs" />
     <Compile Include="JobDriver_PlayArcade.cs" />
+    <Compile Include="JobDriver_PlayComputerModern.cs" />
+    <Compile Include="JobDriver_PlayComputerIndustrial.cs" />
     <Compile Include="JobDriver_PlayDarts.cs" />
     <Compile Include="JobDriver_PlayPiano.cs" />
     <Compile Include="JobDriver_PlayPunchingBag.cs" />

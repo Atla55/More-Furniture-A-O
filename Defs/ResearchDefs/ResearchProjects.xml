@@ -35,7 +35,7 @@
 
 	  <ResearchProjectDef>
 		<defName>MF_RoyalFurniture</defName>
-		<label>royal furniture</label>
+		<label>artisan furniture</label>
 		<tab>OA_MoreFurniture</tab>
 		<description>Build luxury furniture focused strongly on aesthetics and beauty over practicality, usually only seen in the houses of the wealthy elite. Including poster beds, royal chairs, tables and armchairs.</description>
 		<baseCost>800</baseCost>
