@@ -8,7 +8,7 @@
 		<fillPercent>0.30</fillPercent>
 		<graphicData>
 			<texPath>Things/Other/LampOutdoor</texPath>
-			<drawSize>(1.75,2.5)</drawSize>
+			<drawSize>(1.75,2.75)</drawSize>
 		</graphicData>
 		<tickerType>Rare</tickerType>
 		<costList>
@@ -289,7 +289,7 @@
 	<ThingDef ParentName="FurnitureBase">
     <defName>Bin_Small</defName>
     <label>Small bin</label>
-	<description>A small bin to help keeping the area around it somewhat clean.</description>
+	<description>A small bin to help keeping the area around it somewhat clean. Slowly removes trash and filth in a 10 Cell radius.</description>
     <graphicData>
       <texPath>Things/Other/Bin_Small</texPath>
 	  <drawSize>(1,1)</drawSize>
@@ -303,13 +303,14 @@
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
+	<tickerType>Normal</tickerType>
     <fillPercent>0.20</fillPercent>
     <statBases>
       <MaxHitPoints>100</MaxHitPoints>
       <WorkToBuild>495</WorkToBuild>
       <Mass>2</Mass>
       <Flammability>1.0</Flammability>
-	  <Cleanliness>15</Cleanliness>
+	  <Cleanliness>2</Cleanliness>
 	  <Beauty>4</Beauty>
     </statBases>
 	<stuffCategories>
@@ -322,15 +323,22 @@
     <rotatable>false</rotatable>
 	<researchPrerequisites><li>ComplexFurniture</li></researchPrerequisites>
 	<designationCategory>AOMorefurniture</designationCategory>
+	<specialDisplayRadius>10</specialDisplayRadius>
+    <comps>
+	<li Class="AOMoreFurniture.CompProperties_BinClean">
+		<TimerInTicks>2000</TimerInTicks>
+		<Radius>10</Radius>
+	</li>
+    </comps>
   </ThingDef>
   
 	<ThingDef ParentName="FurnitureBase">
     <defName>Bin_Large</defName>
     <label>Large bin</label>
-	<description>A large bin to help keeping the area around it clean.</description>
+	<description>A large bin to help keeping the area around it clean. Slowly removes trash and filth in a 20 Cell radius.</description>
     <graphicData>
       <texPath>Things/Other/BinLarge/BinLarge</texPath>
-	  <drawSize>(3,2)</drawSize>
+	  <drawSize>(2.5,1.5)</drawSize>
       <graphicClass>Graphic_Multi</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
       <shadowData>
@@ -342,13 +350,14 @@
     </graphicData>
     <altitudeLayer>Building</altitudeLayer>
     <passability>PassThroughOnly</passability>
+	<tickerType>Normal</tickerType>
     <fillPercent>0.60</fillPercent>
     <statBases>
       <MaxHitPoints>200</MaxHitPoints>
       <WorkToBuild>800</WorkToBuild>
       <Mass>10</Mass>
       <Flammability>1.0</Flammability>
-	  <Cleanliness>50</Cleanliness>
+	  <Cleanliness>4</Cleanliness>
 	  <Beauty>0</Beauty>
     </statBases>
 	<stuffCategories>
@@ -361,5 +370,12 @@
     <rotatable>true</rotatable>
 	<researchPrerequisites><li>MF_ModernFurniture</li></researchPrerequisites>
 	<designationCategory>AOMorefurniture</designationCategory>
+	<specialDisplayRadius>20</specialDisplayRadius>
+    <comps>
+	<li Class="AOMoreFurniture.CompProperties_BinClean">
+		<TimerInTicks>1500</TimerInTicks>
+		<Radius>20</Radius>
+	</li>
+    </comps>
   </ThingDef>
 </Defs>

@@ -46,6 +46,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CompBinClean.cs" />
+    <Compile Include="CompProperties_BinClean.cs" />
     <Compile Include="EffectorDefOf.cs" />
     <Compile Include="HediffDefOf.cs" />
     <Compile Include="JobDriver_PlayArcade.cs" />
