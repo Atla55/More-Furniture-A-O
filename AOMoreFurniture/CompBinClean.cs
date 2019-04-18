@@ -20,8 +20,6 @@ namespace AOMoreFurniture
         {
             TicksCounted++;
 
-            Log.Message(Convert.ToString(TicksCounted));
-
             if (TicksCounted == Cleanprops.TimerInTicks)
             {
                 TicksCounted = 0;
@@ -40,6 +38,6 @@ namespace AOMoreFurniture
             base.CompTick();
         }
 
-        public int TicksCounted = 0;
+        private int TicksCounted = 0;
     }
 }
