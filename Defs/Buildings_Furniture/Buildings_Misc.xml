@@ -8,7 +8,7 @@
 		<fillPercent>0.30</fillPercent>
 		<graphicData>
 			<texPath>Things/Other/LampOutdoor</texPath>
-			<drawSize>(1.75,2.75)</drawSize>
+			<drawSize>(2,3.5)</drawSize>
 		</graphicData>
 		<tickerType>Rare</tickerType>
 		<costList>
@@ -32,13 +32,14 @@
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>20</glowRadius>
-				<glowColor>(217,217,208,0)</glowColor>
+				<glowColor>(217,217,200,0)</glowColor>
 			</li>
 		</comps>
 		<placeWorkers>
 			<li>PlaceWorker_NotUnderRoof</li>
 		</placeWorkers>
 		<designationCategory>AOMorefurniture</designationCategory>
+		<uiIconOffset>(0, 0.2)</uiIconOffset>
 	</ThingDef>
 
 	<ThingDef ParentName="FurnitureWithQualityBase">
@@ -321,8 +322,8 @@
 	<size>(1,1)</size>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <rotatable>false</rotatable>
-	<researchPrerequisites><li>ComplexFurniture</li></researchPrerequisites>
-	<designationCategory>AOMorefurniture</designationCategory>
+	<researchPrerequisites><li>MF_TrashDisposal</li></researchPrerequisites>
+	<designationCategory>Misc</designationCategory>
 	<specialDisplayRadius>10</specialDisplayRadius>
     <comps>
 	<li Class="AOMoreFurniture.CompProperties_BinClean">
@@ -368,8 +369,8 @@
 	<size>(2,1)</size>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <rotatable>true</rotatable>
-	<researchPrerequisites><li>MF_ModernFurniture</li></researchPrerequisites>
-	<designationCategory>AOMorefurniture</designationCategory>
+	<researchPrerequisites><li>MF_TrashDisposal</li></researchPrerequisites>
+	<designationCategory>Misc</designationCategory>
 	<specialDisplayRadius>20</specialDisplayRadius>
     <comps>
 	<li Class="AOMoreFurniture.CompProperties_BinClean">
@@ -377,5 +378,6 @@
 		<Radius>20</Radius>
 	</li>
     </comps>
+	<uiIconScale>1.2</uiIconScale>
   </ThingDef>
 </Defs>
