@@ -32,7 +32,7 @@
 			</li>
 			<li Class="CompProperties_Glower">
 				<glowRadius>20</glowRadius>
-				<glowColor>(217,217,200,0)</glowColor>
+				<glowColor>(252,187,113,0)</glowColor>
 			</li>
 		</comps>
 		<placeWorkers>
@@ -367,6 +367,7 @@
     </stuffCategories>
 	<costStuffCount>90</costStuffCount>
 	<size>(2,1)</size>
+	<defaultPlacingRot>South</defaultPlacingRot>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <rotatable>true</rotatable>
 	<researchPrerequisites><li>MF_WasteDisposal</li></researchPrerequisites>
