@@ -322,7 +322,7 @@
 	<size>(1,1)</size>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <rotatable>false</rotatable>
-	<researchPrerequisites><li>MF_TrashDisposal</li></researchPrerequisites>
+	<researchPrerequisites><li>MF_WasteDisposal</li></researchPrerequisites>
 	<designationCategory>Misc</designationCategory>
 	<specialDisplayRadius>10</specialDisplayRadius>
     <comps>
@@ -369,7 +369,7 @@
 	<size>(2,1)</size>
     <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
     <rotatable>true</rotatable>
-	<researchPrerequisites><li>MF_TrashDisposal</li></researchPrerequisites>
+	<researchPrerequisites><li>MF_WasteDisposal</li></researchPrerequisites>
 	<designationCategory>Misc</designationCategory>
 	<specialDisplayRadius>20</specialDisplayRadius>
     <comps>

@@ -62,14 +62,14 @@
 	  </ResearchProjectDef>
 
 	<ResearchProjectDef>
-		<defName>MF_TrashDisposal</defName>
-		<label>trash disposal</label>
+		<defName>MF_WasteDisposal</defName>
+		<label>waste disposal</label>
 		<tab>OA_MoreFurniture</tab>
 		<description>Learn to build small and large bins, objects that slowly clean the environment they are in.</description>
 		<baseCost>1200</baseCost>
 		<techLevel>Industrial</techLevel>
 		<prerequisites>
-			<li>ComplexFurniture</li>
+			<li>MF_ModernFurniture</li>
 		</prerequisites>
 		<researchViewY>3</researchViewY>
 		<researchViewX>2</researchViewX>
