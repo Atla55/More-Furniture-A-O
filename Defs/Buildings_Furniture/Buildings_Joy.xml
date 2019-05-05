@@ -495,7 +495,7 @@
     </thingCategories>
     <statBases>
       <MaxHitPoints>75</MaxHitPoints>
-      <WorkToBuild>100</WorkToBuild>
+      <WorkToBuild>4000</WorkToBuild>
       <Mass>3</Mass>
       <Flammability>1.0</Flammability>
       <JoyGainFactor>1.1</JoyGainFactor>
